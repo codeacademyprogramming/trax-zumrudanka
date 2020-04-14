@@ -9,12 +9,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet"
         href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css" />
-    <script src="https://kit.fontawesome.com/b35a418092.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/tooltipster.min.css">
-    <link rel="stylesheet" href="css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/animate.min.css">
+        <script src="https://kit.fontawesome.com/b35a418092.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/tooltipster.min.css">
+        <link rel="stylesheet" href="css/cubeportfolio.min.css">
+        <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>HW-TRAX</title>
 </head>
@@ -29,7 +30,9 @@
     <!-- Preloader ends -->
     <!-- header -->
     <header class="site-header" id="header">
-        <nav class="navbar navbar-expand-lg transparent-bg static-nav">
+        <nav class="navbar navbar-expand-lg transparent-bg static-nav " data-aos="fade-down"
+        data-aos-offset="400"
+        data-aos-easing="ease-in-sine">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="images/logo-transparent.png" alt="logo" class="logo-default">
@@ -64,7 +67,7 @@
             </a>
         </nav>
         <!-- side menu -->
-        <div class="side-menu gradient-bg">
+        <div class="side-menu gradient-bg" >
             <div class="overlay"></div>
             <div class="inner-wrapper">
                 <span class="btn-close btn-close-no-padding" id="btn_sideNavClose"><i class="fas fa-times"></i></span>
@@ -328,14 +331,14 @@
     <div id="about" class="single-feature mt-n5">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
+                <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-aos="fade-right" data-aos-duration="350" data-wow-delay="300ms">
                     <div class="heading-title mb-4">
                         <h2 class="darkcolor font-normal bottom30">Lets take your <span class="defaultcolor">Business</span> to Next Level</h2>
                     </div>
                     <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mauris arcu, lobortis id interdum vitae, interdum eget elit. Curabitur quis urna nulla. Suspendisse potenti. Duis suscipit ultrices maximus. </p>
                     <a href="javascript:void(0)" class="button gradient-btn mb-sm-0 mb-4">Learn More</a>
                 </div>
-                <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-wow-delay="300ms">
+                <div class="col-lg-5 offset-lg-1 col-md-5 col-sm-5 wow fadeInRight" data-aos="fade-left" data-aos-duration="350" data-wow-delay="300ms">
                     <div class="image"><img alt="SEO" src="images/awesome-feature.png"></div>
                 </div>
             </div>
@@ -346,7 +349,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
-                <div class="heading-title whitecolor wow fadeInUp" data-wow-delay="300ms">
+                <div class="heading-title whitecolor wow fadeInUp" data-aos="fade-up"
+                data-aos-duration="300">
                     <span>Quisque tellus risus, adipisci </span>
                     <h2 class="font-normal">Our Work Process </h2>
                 </div>
@@ -354,27 +358,42 @@
         </div>
         <div class="row">
             <ul class="process-wrapp process-list">
-                <li class="whitecolor wow fadeIn" data-wow-delay="300ms">
+                <li class="whitecolor wow fadeIn" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0">
                     <span class="process-num">01</span>
                     <p class="fontbold bottom20">Concept</p>
                     <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="400ms">
+                <li class="whitecolor wow fadeIn" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="400"
+                data-aos-offset="0">
                     <span class="process-num">02</span>
                     <p class="fontbold bottom20">Plan</p>
                     <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="500ms">
+                <li class="whitecolor wow fadeIn" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="500"
+                data-aos-offset="0">
                     <span class="process-num active">03</span>
                     <p class="fontbold bottom20">Design</p>
                     <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="600ms">
+                <li class="whitecolor wow fadeIn" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="600"
+                data-aos-offset="0">
                     <span class="process-num">04</span>
                     <p class="fontbold bottom20">Development</p>
                     <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
                 </li>
-                <li class="whitecolor wow fadeIn" data-wow-delay="700ms">
+                <li class="whitecolor wow fadeIn" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="700"
+                data-aos-offset="0">
                     <span class="process-num">05</span>
                     <p class="fontbold bottom20">Quality Check</p>
                     <p class="mt-n2 mt-sm-0">Quisque tellus risus, adipisci viverra bibendum urna.</p>
@@ -389,7 +408,8 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-7 col-sm-12">
-                <div class="heading-title wow fadeInUp" data-wow-delay="300ms">
+                <div class="heading-title wow fadeInUp" data-aos="fade-up"
+                data-aos-duration="300">
                     <span class="text-center text-md-left">Quisque tellus risus, adipisci viverra</span>
                     <h2 class="font-normal text-center text-md-left">Mobile App Designs</h2>
                 </div>
@@ -401,7 +421,8 @@
         <div class="row d-flex align-items-center" id="app-feature">
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="text-center text-md-right">
-                    <div class="feature-item mt-3 wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="feature-item mt-3 wow fadeInLeft" data-aos="fade-right"
+                    data-aos-duration="350">
                         <div class="icon"><i class="fas fa-cog"></i></div>
                         <div class="text">
                             <h3>
@@ -410,7 +431,8 @@
                             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
                         </div>
                     </div>
-                    <div class="feature-item mt-5 wow fadeInLeft" data-wow-delay="350ms">
+                    <div class="feature-item mt-5 wow fadeInLeft" data-aos="fade-right"
+                    data-aos-duration="400">
                         <div class="icon"><i class="fas fa-edit"></i></div>
                         <div class="text">
                             <h3>
@@ -437,7 +459,8 @@
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="text-center text-md-left">
-                    <div class="feature-item mt-3 wow fadeInRight" data-wow-delay="300ms">
+                    <div class="feature-item mt-3 wow fadeInRight" data-aos="fade-left"
+                    data-aos-duration="350">
                         <div class="icon"><i class="fas fa-code"></i></div>
                         <div class="text">
                             <h3  class="bottom15">
@@ -446,7 +469,8 @@
                             <p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet</p>
                         </div>
                     </div>
-                    <div class="feature-item mt-5 wow fadeInRight" data-wow-delay="350ms">
+                    <div class="feature-item mt-5 wow fadeInRight" data-aos="fade-left"
+                    data-aos-duration="400">
                         <div class="icon"><i class="far fa-folder-open"></i></div>
                         <div class="text">
                             <h3  class="bottom15">
@@ -489,20 +513,20 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="heading-title bottom30 wow fadeInLeft" data-wow-delay="300ms">
+                <div class="heading-title bottom30 wow fadeInLeft" data-aos="fade-right" data-aos-duration="350">
                     <span class="defaultcolor text-center text-md-left">Quisque tellus risus, adipisci</span>
                     <h2 class="darkcolor font-normal text-center text-md-left">Meet Our Experts</h2>
                 </div>
             </div>
             <div class="col-lg-6 col-md-6 col-sm-12">
-                <p class="text-center text-md-left wow fadeInRight" data-wow-delay="300ms">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
+                <p class="text-center text-md-left wow fadeInRight" data-aos="fade-left" data-aos-duration="350">Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus metus sollicitudin. Quisque vitae sodales lectus. </p>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div id="ourteam-slider" class="owl-carousel">
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="100ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="100">
                             <div class="image">
                                 <img src="images/team-1.jpg" alt="">
                             </div>
@@ -518,7 +542,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="150ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="200">
                             <div class="image">
                                 <img src="images/team-2.jpg" alt="">
                             </div>
@@ -534,7 +558,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="200ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="350">
                             <div class="image">
                                 <img src="images/team-3.jpg" alt="">
                             </div>
@@ -550,7 +574,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="250ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="500">
                             <div class="image">
                                 <img src="images/team-4.jpg" alt="">
                             </div>
@@ -566,7 +590,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="100ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="650">
                             <div class="image">
                                 <img src="images/team-1.jpg" alt="">
                             </div>
@@ -582,7 +606,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="150ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="200">
                             <div class="image">
                                 <img src="images/team-2.jpg" alt="">
                             </div>
@@ -598,7 +622,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="team-box wow fadeInUp" data-wow-delay="200ms">
+                        <div class="team-box wow fadeInUp" data-aos="fade-up" data-aos-duration="350">
                             <div class="image">
                                 <img src="images/team-3.jpg" alt="">
                             </div>
@@ -625,7 +649,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 col-sm-12 text-center">
-                <div class="heading-title darkcolor wow fadeInUp" data-wow-delay="300ms">
+                <div class="heading-title darkcolor wow fadeInUp" data-aos="fade-up" data-aos-duration="300">
                     <span class="defaultcolor">Quisque tellus risus, adipisci </span>
                     <h2 class="font-normal heading_space_half"> Pricing Offers </h2>
                 </div>
@@ -640,7 +664,7 @@
         <div class="owl-carousel owl-theme no-dots" id="price-slider">
             <div class="item">
                 <div class="col-md-12">
-                    <div class="pricing-item wow fadeInUp animated sale" data-wow-delay="300ms" data-sale="30">
+                    <div class="pricing-item wow fadeInUp animated sale" data-aos="fade-up" data-aos-duration="300" data-sale="30">
                         <h3 class="font-light darkcolor">Basic</h3>
                         <p class="bottom30">The standard version</p>
                         <div class="pricing-price darkcolor"><span class="pricing-currency">$9.95</span> /<span class="pricing-duration">month</span></div>
@@ -657,7 +681,7 @@
             </div>
             <div class="item">
                 <div class="col-md-12">
-                    <div class="pricing-item wow fadeInUp animated active selected" data-wow-delay="380ms">
+                    <div class="pricing-item wow fadeInUp animated active selected" data-aos="fade-up" data-aos-duration="400">
                         <h3 class="font-light darkcolor">Popular</h3>
                         <p class="bottom30">The standard version</p>
                         <div class="pricing-price darkcolor"><span class="pricing-currency">$19.95</span> /<span class="pricing-duration">month</span></div>
@@ -674,7 +698,7 @@
             </div>
             <div class="item">
                 <div class="col-md-12">
-                    <div class="pricing-item wow fadeInUp animated" data-wow-delay="460ms">
+                    <div class="pricing-item wow fadeInUp animated" data-aos="fade-up" data-aos-duration="500">
                         <h3 class="font-light darkcolor">Enterprise</h3>
                         <p class="bottom30">The standard version</p>
                         <div class="pricing-price darkcolor"><span class="pricing-currency">$29.95</span> /<span class="pricing-duration">month</span></div>
@@ -691,7 +715,7 @@
             </div>
             <div class="item">
                 <div class="col-md-12">
-                    <div class="pricing-item wow fadeInUp animated" data-wow-deeay="400ms">
+                    <div class="pricing-item wow fadeInUp animated" data-aos="fade-up" data-aos-duration="400">
                         <h3 class="font-light darkcolor">Ultimate</h3>
                         <p class="bottom30">The standard version</p>
                         <div class="pricing-price darkcolor"><span class="pricing-currency">$49.95</span> /<span class="pricing-duration">month</span></div>
@@ -714,8 +738,11 @@
 <div id="portfolio" class="position-relative padding">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center wow fadeIn" data-wow-delay="300ms">
-                <div class="heading-title darkcolor wow fadeInUp" data-wow-delay="300ms">
+            <div class="col-md-12 text-center wow fadeIn" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+                <div class="heading-title darkcolor wow fadeInUp" data-aos="fade-up" data-aos-duration="300">
                     <span class="defaultcolor"> Let's Explore Out </span>
                     <h2 class="font-normal darkcolor heading_space_half"> Our Portfolio </h2>
                 </div>
@@ -724,7 +751,10 @@
                 </div>
             </div>
             <div class="col-lg-12">
-                <div id="mosaic-filter" class="cbp-l-filters bottom30 wow fadeIn text-center" data-wow-delay="350ms">
+                <div id="mosaic-filter" class="cbp-l-filters bottom30 wow fadeIn text-center" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="350"
+                data-aos-offset="0">
                     <div data-filter="*" class="cbp-filter-item">
                         <span>All</span>
                     </div>
@@ -832,7 +862,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6 col-md-12 text-center text-lg-right">
-                    <div class="heading-title wow fadeInRight padding_testi" data-wow-delay="300ms">
+                    <div class="heading-title wow fadeInRight padding_testi" data-aos="fade-left"
+                    data-aos-offset="350"
+                    data-aos-easing="ease-in-sine">
                         <span class="whitecolor">Quisque tellus risus, adipisci</span>
                         <h2 class="whitecolor font-normal">What People Say</h2>
                     </div>
@@ -982,7 +1014,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <div class="heading-title darkcolor wow fadeInUp" data-wow-delay="100ms">
+                <div class="heading-title darkcolor wow fadeInUp" data-aos="fade-up"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine">
                     <span class="defaultcolor">Read Out Our</span>
                     <h2 class="font-normal darkcolor heading_space_half"> Latest Blog </h2>
                 </div>
@@ -993,7 +1027,9 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-6">
-                <div class="news_item shadow wow fadeInUp" data-wow-delay="200ms">
+                <div class="news_item shadow wow fadeInUp" data-aos="fade-up"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine">
                     <div class="blog-img">
                         <a class="image" href="blog-1.html">
                             <img src="images/blog-1.jpg" alt="Latest News" class="img-responsive">
@@ -1011,7 +1047,9 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="news_item shadow wow fadeInUp" data-wow-delay="300ms">
+                <div class="news_item shadow wow fadeInUp" data-aos="fade-up"
+                data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
                     <div class="blog-img">
                         <div class="owl-carousel owl-theme owl-blog-item">
                             <div class="image item">
@@ -1040,7 +1078,9 @@
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
-                <div class="news_item shadow mb-0 wow fadeInUp" data-wow-delay="400ms">
+                <div class="news_item shadow mb-0 wow fadeInUp" data-aos="fade-up"
+                data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
                     <div class="blog-img">
                         <a data-fancybox="" href="video/video.mp4">
                             <div class="play-hvr">
@@ -1073,7 +1113,9 @@
     <div class="container whitebox padding_bottom_half">
         <div class="padding_top">
             <div class="row">
-                <div class="col-md-12 text-center wow fadeInUp mt-n3" data-wow-delay="300ms">
+                <div class="col-md-12 text-center wow fadeInUp mt-n3" data-aos="fade-up"
+                data-aos-offset="400"
+                data-aos-easing="ease-in-sine">
                     <span class="defaultcolor">Quisque tellus risus</span>
                     <div class="heading-title bottom25 darkcolor">
                         <h2 class="font-normal darkcolor"> Contact Us </h2>
@@ -1083,7 +1125,9 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 order-md-2 text-center text-md-left">
-                    <div class="contact-meta pl-0 pl-sm-5 wow fadeInRight" data-wow-delay="300ms">
+                    <div class="contact-meta pl-0 pl-sm-5 wow fadeInRight" data-aos="fade-left"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
                         <div class="heading-title heading_small">
                             <span class="defaultcolor mb-2">Trax Agency Worldwide</span>
                             <h3 class="darkcolor font-normal">Our London Agency</h3>
@@ -1095,7 +1139,9 @@
                             <p class="bottom10"><a href="mailto:polpo@traxagency.co.au">polpo@traxagency.com</a></p>
                             <p class="bottom10">Mon-Fri: 9am-5pm</p>
                         </div>
-                        <ul class="social-icons no-border mb-4 mb-md-0 wow fadeInUp contact-icons" data-wow-delay="300ms">
+                        <ul class="social-icons no-border mb-4 mb-md-0 wow fadeInUp contact-icons" data-aos="fade-up"
+                        data-aos-offset="400"
+                        data-aos-easing="ease-in-sine">
                             <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
                             <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
                             <li><a href="javascript:void(0)" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
@@ -1106,10 +1152,14 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <div class="heading-title  wow fadeInLeft" data-wow-delay="300ms">
+                    <div class="heading-title  wow fadeInLeft" data-aos="fade-right"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
                         <form class="getin_form" onsubmit="return false;">
                             <div class="row px-2">
-                                <div class="col-md-12 col-sm-12" id="result1"></div>
+                                <div class="col-md-12 col-sm-12" id="result1">
+                                <div class="alert-success thanks" style="padding:10px; margin-bottom:25px;"></div>
+                                </div>
                                 <div class="col-md-12 col-sm-12">
                                     <div class="form-group">
                                         <label for="name1" class="d-none"></label>
@@ -1151,12 +1201,16 @@
         <div class="contactus-wrapp position-absolute shadow-equal">
             <div class="row">
                 <div class="col-md-12 col-sm-12">
-                    <div class="heading-title wow fadeInUp text-center text-md-left" data-wow-delay="300ms">
+                    <div class="heading-title wow fadeInUp text-center text-md-left" data-aos="fade-up"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
                         <h3 class="darkcolor bottom20">Stay Connected</h3>
                     </div>
                 </div>
                 <div class="col-md-12 col-sm-12">
-                    <form class="getin_form wow fadeInUp" data-wow-delay="400ms" onsubmit="return false;">
+                    <form class="getin_form wow fadeInUp" data-aos="fade-right"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine" onsubmit="return false;">
                         <div class="row">
                             <div class="col-md-12 col-sm-12" id="result"></div>
                             <div class="col-md-3 col-sm-6">
@@ -1202,7 +1256,9 @@
                             +01 - 123 - 4567 <a class="d-block" href="mailto:web@support.com">web@support.com</a>
                         </p>
                     </div>
-                    <ul class="social-icons white wow fadeInUp" data-wow-delay="300ms">
+                    <ul class="social-icons white wow fadeInUp" data-aos="fade-up"
+                    data-aos-offset="400"
+                    data-aos-easing="ease-in-sine">
                         <li><a href="javascript:void(0)" class="facebook"><i class="fab fa-facebook-f"></i> </a> </li>
                         <li><a href="javascript:void(0)" class="twitter"><i class="fab fa-twitter"></i> </a> </li>
                         <li><a href="javascript:void(0)" class="linkedin"><i class="fab fa-linkedin-in"></i> </a> </li>
@@ -1252,16 +1308,20 @@
 <a href="#" class="back-top"><i class="fa fa-angle-up"></i></a>
 
 
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/jquery-countTo.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/jquery.cubeportfolio.min.js"></script>
-    <script src="js/jquery-countTo.js"></script>
     <!-- <script src="js/map.js"></script> -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/tooltipster.min.js"></script>
     <script src="js/script.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

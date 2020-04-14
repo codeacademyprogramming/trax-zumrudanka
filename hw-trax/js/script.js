@@ -4,6 +4,7 @@ $(function () {
     $(window).on("load", function () {
         $(".loader").fadeOut(800);
     });
+
     /* ========== HOME SLIDER =========== */
     let sliderCount = 0;
     let timer;
@@ -21,18 +22,19 @@ $(function () {
     };
     timer = setInterval(setTimer, 6000);
     setTimer();
+
     function clickBullets() {
         if (sliderCount == ($("#home-slider li").length - 1)) {
             sliderCount = 0;
         } else {
             sliderCount++;
         }
-    $(document).on('click', '.tp-bullet', function () {
-        $("#home-slider li.active-main").removeClass("active-main");
-        $("#home-slider li").eq(sliderCount).addClass("active-main");
-        $('.tp-bullet.selected').removeClass('selected');
-        $(this).addClass('selected');
-    })
+        $(document).on('click', '.tp-bullet', function () {
+            $("#home-slider li.active-main").removeClass("active-main");
+            $("#home-slider li").eq(sliderCount).addClass("active-main");
+            $('.tp-bullet.selected').removeClass('selected');
+            $(this).addClass('selected');
+        })
     }
     clickBullets()
     /* ==== BUTTON TO TOP ==== */
@@ -50,16 +52,16 @@ $(function () {
         }, 700);
         return false;
     });
- /* ==== NAVIGATION BAR ==== */
- $(document).on('click', '.sidemenu_btn', function () {
-    $(this).toggle();
-    $('.side-menu').css('display', 'block');
-    $('#close_side_menu').css('display', 'block');
-})
-$(document).on('click', '#btn_sideNavClose', function () {
-    $('.side-menu').css('display', 'none');
-    $('#close_side_menu').css('display', 'none');
-})
+    /* ==== NAVIGATION BAR ==== */
+    $(document).on('click', '.sidemenu_btn', function () {
+        $(this).toggle();
+        $('.side-menu').css('display', 'block');
+        $('#close_side_menu').css('display', 'block');
+    })
+    $(document).on('click', '#btn_sideNavClose', function () {
+        $('.side-menu').css('display', 'none');
+        $('#close_side_menu').css('display', 'none');
+    })
 
     $(window).scroll(function () {
         let scroll = $(window).scrollTop();
@@ -69,7 +71,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             $('.logo-default').css('display', 'none');
             $(".static-nav").removeClass("transparent-bg");
             $(".static-nav .nav-link").css('color', '#384141');
-            $(".sidemenu_btn").css('color', '#384141');
+            $(".sidemenu_btn>span").css('background-color', '#384141');
             $('#sidemenu_toggle').css('display', 'block');
         } else {
             $(".static-nav").removeClass("fixedmenu");
@@ -77,7 +79,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             $('.logo-default').css('display', 'block');
             $(".static-nav").addClass("transparent-bg");
             $(".static-nav .nav-link").css('color', '#fff');
-            $(".sidemenu_btn").css('color', '#fff');
+            $(".sidemenu_btn>span").css('background-color', '#fff');
         }
     });
     /* ==== PROCESS ==== */
@@ -89,7 +91,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
         $('span.process-num.active').removeClass('active');
         $(this).children('li:nth-child(3)').children('span').addClass('active');
     })
-/* ==== PRICING SECTION ==== */
+    /* ==== PRICING SECTION ==== */
     $('.pricing-item').on('mouseenter', function () {
         $('.pricing-item').removeClass('active');
         $(this).addClass('active');
@@ -106,26 +108,26 @@ $(document).on('click', '#btn_sideNavClose', function () {
         $('.Pricing-toggle-button.year').removeClass('active');
     })
 
-        /* =====================================
-                 Fancy Box Image viewer
-          ====================================== */
-        $('[data-fancybox]').fancybox({
-            'transitionIn': 'elastic',
-            'transitionOut': 'elastic',
-            'speedIn': 600,
-            'speedOut': 200,
-            buttons: [
-                'slideShow',
-                'fullScreen',
-                'thumbs',
-                'share',
-                // 'download',
-                'zoom',
-                'close'
-            ],
-        });
+    /* =====================================
+             Fancy Box Image viewer
+      ====================================== */
+    $('[data-fancybox]').fancybox({
+        'transitionIn': 'elastic',
+        'transitionOut': 'elastic',
+        'speedIn': 600,
+        'speedOut': 200,
+        buttons: [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'share',
+            // 'download',
+            'zoom',
+            'close'
+        ],
+    });
 
-/* ==== OWL SLIDERS ==== */
+    /* ==== OWL SLIDERS ==== */
     /* ==== PARTNERS ==== */
     $("#partners-slider").owlCarousel({
         items: 5,
@@ -180,7 +182,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             },
         }
     });
-/* ==== GALLERY DETAILS ==== */
+    /* ==== GALLERY DETAILS ==== */
     $("#carousel-gallery-detail").owlCarousel({
         items: 1,
         autoplay: false,
@@ -201,7 +203,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             },
         }
     });
-/* ==== TESTIMONIAL==== */
+    /* ==== TESTIMONIAL==== */
     $("#testimonial-main-slider").owlCarousel({
         items: 3,
         autoplay: 2500,
@@ -225,7 +227,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             },
         }
     });
-/* ==== PRICE SLIDER ==== */
+    /* ==== PRICE SLIDER ==== */
     $("#price-slider").owlCarousel({
         items: 3,
         autoplay: false,
@@ -249,7 +251,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             },
         }
     });
-/* ==== OUR TEAM ==== */
+    /* ==== OUR TEAM ==== */
     $("#ourteam-slider").owlCarousel({
         items: 4,
         margin: 0,
@@ -270,7 +272,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             },
         }
     });
-/* ==== APPS SLIDER ==== */
+    /* ==== APPS SLIDER ==== */
     $("#app-slider").owlCarousel({
         items: 1,
         loop: true,
@@ -295,7 +297,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
     $('.app-slider-lock-btn').on('click', function () {
         $('.app-slider-lock').fadeToggle(600);
     });
-/* ==== SERVICES SLIDER ==== */
+    /* ==== SERVICES SLIDER ==== */
     $("#services-slider").owlCarousel({
         autoplay: false,
         autoplayTimeout: 3000,
@@ -317,7 +319,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             }
         }
     });
-/* ==== SERVICE DETAIL ==== */
+    /* ==== SERVICE DETAIL ==== */
     $("#service-detail").owlCarousel({
         autoplay: true,
         autoplayTimeout: 3000,
@@ -398,16 +400,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             cols: 1,
         }],
     });
-
-
-
-
-
-
-
-
-
-/*==== GALLERY SECTION ====*/
+    /*==== GALLERY SECTION ====*/
     $("#grid-mosaic").cubeportfolio({
         filters: "#mosaic-filter",
         layoutMode: 'grid',
@@ -437,7 +430,7 @@ $(document).on('click', '#btn_sideNavClose', function () {
             }
         },
     });
-/*==== CONTACT US ====*/
+    /*==== CONTACT US ====*/
     $("#submit_btn1 , #submit_btn").on('click', function () {
         let userName = $('#name1').val();
         let userEmail = $('#email1').val();
@@ -451,7 +444,6 @@ $(document).on('click', '#btn_sideNavClose', function () {
         } else {
             result = $('#result1');
         }
-
         let proceed = true;
         if (userName === "") {
             proceed = false;
@@ -462,21 +454,29 @@ $(document).on('click', '#btn_sideNavClose', function () {
         if (userMessage === "") {
             proceed = false;
         }
+
+        if (userName && userEmail && userMessage) {
+            $('.thanks').show();
+            $('.thanks').text(`Hi, Thank you for contacting us.`);
+        }
+        $('#name1').val() = "";
+        $('#email1').val() = "";
+        $('#message1').val() = "";
     });
 });
 
 
-    /* =====================================
-     Parallax And responsive plugins initialize
-      ====================================== */
+/* =====================================
+ Parallax And responsive plugins initialize
+  ====================================== */
 let $tooltip = $('.tooltip');
-$(()=> {
+$(() => {
     $tooltip.tooltipster({
         plugins: ['follower'],
         anchor: 'bottom-right',
         offset: [0, 0],
         animation: 'fade',
-        content:'Click Here To Close or Press ESC!',
+        content: 'Click Here To Close or Press ESC!',
         delay: 20,
         theme: 'tooltipster-light',
         repositionOnScroll: true,
@@ -485,51 +485,51 @@ $(()=> {
         }
     });
 });
-    /*Testimonials Grids*/
-    $("#testimonial-grid").cubeportfolio({
-        layoutMode: 'grid',
-        defaultFilter: '*',
-        animationType: "quicksand",
-        gapHorizontal: 0,
-        gapVertical: 0,
-        gridAdjustment: "responsive",
-        mediaQueries: [{
-            width: 1500,
-            cols: 4,
-        }, {
-            width: 1100,
-            cols: 4
-        }, {
-            width: 800,
-            cols: 3
-        }, {
-            width: 480,
-            cols: 2
-        }, {
-            width: 320,
-            cols: 1
-        }],
-    });
+/*Testimonials Grids*/
+$("#testimonial-grid").cubeportfolio({
+    layoutMode: 'grid',
+    defaultFilter: '*',
+    animationType: "quicksand",
+    gapHorizontal: 0,
+    gapVertical: 0,
+    gridAdjustment: "responsive",
+    mediaQueries: [{
+        width: 1500,
+        cols: 4,
+    }, {
+        width: 1100,
+        cols: 4
+    }, {
+        width: 800,
+        cols: 3
+    }, {
+        width: 480,
+        cols: 2
+    }, {
+        width: 320,
+        cols: 1
+    }],
+});
 
-    /*Testimonials Grids*/
-    $("#price-grid").cubeportfolio({
-        layoutMode: 'grid',
-        defaultFilter: '*',
-        animationType: "quicksand",
-        gapHorizontal: 50,
-        gapVertical: 50,
-        gridAdjustment: "responsive",
-        mediaQueries: [{
-            width: 1500,
-            cols: 3
-        }, {
-            width: 1100,
-            cols: 3
-        }, {
-            width: 800,
-            cols: 2
-        }, {
-            width: 480,
-            cols: 1
-        }]
-    });
+/*Testimonials Grids*/
+$("#price-grid").cubeportfolio({
+    layoutMode: 'grid',
+    defaultFilter: '*',
+    animationType: "quicksand",
+    gapHorizontal: 50,
+    gapVertical: 50,
+    gridAdjustment: "responsive",
+    mediaQueries: [{
+        width: 1500,
+        cols: 3
+    }, {
+        width: 1100,
+        cols: 3
+    }, {
+        width: 800,
+        cols: 2
+    }, {
+        width: 480,
+        cols: 1
+    }]
+});

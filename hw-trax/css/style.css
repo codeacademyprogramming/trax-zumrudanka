@@ -14,6 +14,9 @@ body{
 a, button{
   transition: ease all .3s;
 }
+body * {
+  transition: ease all 0.3s;
+}
 .loader {
   bottom: 0;
   height: 100%;
@@ -1196,19 +1199,6 @@ height: 630px;
       margin-bottom: 15px;
   }
 }
-
-@media (max-width: 576px) {
-  .price-toggle-wrapper .Pricing-toggle-button {
-      padding: 10px 30px;
-  }
-  .carousel-shop-detail .owl-nav button,
-  #carousel-gallery-detail .owl-nav button {
-      transform: translateX(0) !important;
-  }
-  #syncCarousel .owl-stage {
-      pointer-events: none;
-  }
-}
 /* ----- Pricing ends ----- */
 /*----- Gallery Portfolio -----*/
 #portfolio{
@@ -1496,6 +1486,7 @@ margin-top: -30px;
     height: 180px;
     width: 180px;
     overflow: hidden;
+    border-radius: 50%;
 }
 .testi-box .testimonial-round h4{
   margin-top: 15px;
@@ -1514,6 +1505,10 @@ a.testim-name{
   object-fit: cover;
   object-position: center;
   border-radius: 50%;
+}
+.testi-box .testimonial-round>img:hover{
+  transform: scale(1.2);
+  transition: all ease .3s;
 }
 #our-partners{
   width: 100%;
@@ -1663,7 +1658,22 @@ ul.rounded li::before{
 }
 .news_item .blog-img{
   position: relative;
+  height: 224px;
   margin: 0 auto;
+}
+.news_item .blog-img img{
+  width: 100%;
+  height: 100%;
+}
+.news_item .blog-img .owl-carousel{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+.news_item .blog-img .image{
+  width: 100%;
+  height: 100%;
 }
 .owl-blog-item .owl-nav {
   position: absolute;
@@ -1750,6 +1760,9 @@ ul.rounded li::before{
 .form-group label,
 .checkbox label {
   position: relative;
+}
+.thanks{
+  display: none;
 }
 .contactus-wrapp {
   padding: 2.5rem 2rem;
